@@ -3,7 +3,9 @@
 <head>
 <link rel="stylesheet" href="style.css">
 <script>
-var st = <?php echo json_encode($_POST['user'] ?? null) ?>;
+var dloc= window.location.href;
+dloc = dloc.split("?");
+var st = dloc[1];
 </script>
 <script type="text/javascript" src="data.js"></script>
 <script>
