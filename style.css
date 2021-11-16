@@ -1,0 +1,58 @@
+* {
+    background-color: gray;
+  }
+  .container {
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "lastdate . ."
+      ". datedif ."
+      ". . currdate";
+  }
+  
+  #lastdate { 
+    grid-area: lastdate; 
+    border-radius: 60%;
+    border: 0.5rem solid #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;  
+
+
+}
+  
+  #datedif { 
+    grid-area: datedif; 
+    border-radius: 60%;
+    border: 0.5rem solid #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;  
+
+}
+  
+  #currdate { 
+    grid-area: currdate; 
+    border-radius: 60%;
+    border: 0.5rem solid #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+
+}
+
+  .dates{
+    text-align: center;
+    justify-items: center;
+    font-size: 200%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
