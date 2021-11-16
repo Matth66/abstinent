@@ -9,7 +9,7 @@ var st = dloc[1];
 </script>
 <script type="text/javascript" src="data.js"></script>
 <script>
-if(st==null) window.location.href = "login.php?"
+if(st==null) window.location.href = "login.html?"
 else try {
     var obj = JSON.parse(data);
     console.log(obj[0][st].username);
@@ -18,7 +18,7 @@ else try {
     else window.location.href = "login.html?state";
 } catch (error) {
   console.error(error);
-  window.location.href = "login.php?state";
+  window.location.href = "login.html?state";
 }
     
 
@@ -51,7 +51,7 @@ function checkTime(i) {
 </head>
 
 <body onload="onload()" >
-<button onclick="window.location.href='login.php'">Logout</button>  
+<button onclick="window.location.href='login.html'">Logout</button>  
 <div id="username">s</div> 
 <div class="container">
   <div class="dates" id="lastdate"></div>
